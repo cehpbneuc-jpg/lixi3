@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Lì xì Tết 🧧</title>
+<style>
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#ffdddd;
+    font-family:Arial;
+}
+.lixi{
+    width:220px;
+    height:320px;
+    background:red;
+    border-radius:12px;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+    position:relative;
+}
+.lixi::before{
+    content:"🧧";
+    font-size:130px;
+    position:absolute;
+    top:40px;
+    left:50%;
+    transform:translateX(-50%);
+}
+.text{
+    position:absolute;
+    bottom:20px;
+    width:100%;
+    text-align:center;
+    color:gold;
+    font-size:22px;
+    font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<div class="lixi" onclick="openLixi()">
+    <div class="text">Nhấn mở lì xì</div>
+</div>
+
+<script>
+function openLixi(){
+    window.location.href = "boom.html";
+}
+</script>
+
+</body>
+</html>
